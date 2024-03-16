@@ -37,10 +37,10 @@ const Card: React.FC<CardProps> = ({ image, courseName, price, rating, link }) =
   return (
     <div className="w-full max-w-xs bg-white border border-orange-300 rounded-lg overflow-hidden transform transition-transform duration-300 hover:border-black hover:scale-105">
       <a href="#">
-        <Image className="p-8 rounded-t-lg" src={image} alt="course image" />
+        <Image width={500} height={500} className="p-8 rounded-t-lg" src={image} alt="course image" />
       </a>
       <div className="px-5 pb-5">
-        <a href={link}>
+        <a href={link} className="block">
           <h5 className="text-xl font-semibold tracking-tight text-gray-900">{courseName}</h5>
         </a>
         <div className="flex items-center mt-2.5 mb-5">

@@ -23,7 +23,7 @@ export class DatabaseService{
     async getCourses(){
         try {
             
-            console.log("Fetching Courses ...")
+            // console.log("Fetching Courses ...")
             return this.databases.listDocuments(
                 config.appwriteDatabaseId,
                 config.appwriteCollectionId

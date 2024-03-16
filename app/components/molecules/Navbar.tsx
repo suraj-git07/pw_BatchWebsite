@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; 
+import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800'], subsets: ['latin'] });
@@ -10,8 +10,10 @@ const Navbar = () => {
       <div className="flex items-center sm:pl-28">
         <a href='https://www.pw.live/'>
           <Image
-            src="./pw_icon.png"
+            src="/pw_icon.png"
             alt="Logo"
+            width={100}
+            height={100}
             className="w-14 h-14 mr-2"
           />
         </a>
@@ -20,8 +22,10 @@ const Navbar = () => {
           <p className={`text-base font-semibold text-indigo-500 underline ${poppins.className} ml-1`}>Ongoing Batches</p>
         </div>
         <Image
-          src="./calendar.png"
+          src="/calendar.png"
           alt="calendar"
+          width={100}
+          height={100}
           className="w-9 h-9 ml-3 sm:ml-0"
         />
       </div>

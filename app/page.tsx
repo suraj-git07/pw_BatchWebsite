@@ -27,8 +27,10 @@ export default function Home() {
     <div>
       <div>
         <Image
-          src="./banner.png"
+          src="/banner.png" 
           alt="Banner Image"
+          width={640} 
+          height={360} 
           className="w-full h-auto max-h-72 mt-1 mb-5"
         />
       </div>
