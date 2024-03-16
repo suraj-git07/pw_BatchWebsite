@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; 
 
 interface CardProps {
   image: string;
@@ -36,7 +37,7 @@ const Card: React.FC<CardProps> = ({ image, courseName, price, rating, link }) =
   return (
     <div className="w-full max-w-xs bg-white border border-orange-300 rounded-lg overflow-hidden transform transition-transform duration-300 hover:border-black hover:scale-105">
       <a href="#">
-        <img className="p-8 rounded-t-lg" src={image} alt="course image" />
+        <Image className="p-8 rounded-t-lg" src={image} alt="course image" />
       </a>
       <div className="px-5 pb-5">
         <a href={link}>

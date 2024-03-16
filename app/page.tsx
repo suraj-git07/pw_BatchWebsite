@@ -3,6 +3,7 @@
 import Card from './components/atoms/Card';
 import React, { useState, useEffect } from 'react';
 import appwriteService from "./appwrite/database";
+import Image from 'next/image'; 
 
 export default function Home() {
   const [courses, setCourses] = useState<any>([]);
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        <img
+        <Image
           src="./banner.png"
           alt="Banner Image"
           className="w-full h-auto max-h-72 mt-1 mb-5"
